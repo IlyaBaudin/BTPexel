@@ -49,6 +49,7 @@
 		EDE5A4872C5AC91700D32FBC /* PexelDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A4862C5AC91700D32FBC /* PexelDataModel.swift */; };
 		EDE5A4892C5AC92B00D32FBC /* PexelPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A4882C5AC92B00D32FBC /* PexelPaginator.swift */; };
 		EDE5A48B2C5ADBE000D32FBC /* PexelPaginatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A48A2C5ADBE000D32FBC /* PexelPaginatorTests.swift */; };
+		EDF0704B2E45772A00355AF2 /* AppDelegate+SDWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0704A2E45771D00355AF2 /* AppDelegate+SDWebImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		EDE5A4862C5AC91700D32FBC /* PexelDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelDataModel.swift; sourceTree = "<group>"; };
 		EDE5A4882C5AC92B00D32FBC /* PexelPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelPaginator.swift; sourceTree = "<group>"; };
 		EDE5A48A2C5ADBE000D32FBC /* PexelPaginatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelPaginatorTests.swift; sourceTree = "<group>"; };
+		EDF0704A2E45771D00355AF2 /* AppDelegate+SDWebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SDWebImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		ED2A97D82C52F51E00FFF19F /* BTPexel */ = {
 			isa = PBXGroup;
 			children = (
+				EDF0704A2E45771D00355AF2 /* AppDelegate+SDWebImage.swift */,
 				ED2A97D92C52F51E00FFF19F /* AppDelegate.swift */,
 				ED2A97DB2C52F51E00FFF19F /* SceneDelegate.swift */,
 				ED2A98092C52F6F800FFF19F /* View */,
@@ -514,6 +517,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF0704B2E45772A00355AF2 /* AppDelegate+SDWebImage.swift in Sources */,
 				EDE5A46E2C5955DA00D32FBC /* ShadowView.swift in Sources */,
 				ED2A980F2C52F90600FFF19F /* PhotoCell.swift in Sources */,
 				ED2A97DE2C52F51E00FFF19F /* PhotosListViewController.swift in Sources */,

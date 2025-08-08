@@ -29,9 +29,31 @@ class PhotoCell: UITableViewCell {
     /// Configure cell with photo object that contains all required fields to present it to user
     /// - Parameter photo: object that represents photo item
     public func configureCell(photo: PexelPhotoProtocol) {
-        photoView.sd_setImage(with: URL(string: photo.photoUrl))
         titleLabel.text = photo.photoTitle
         authorLabel.text = photo.authorName
+        
+        guard let url = URL(string: photo.photoUrl) else {
+            photoView.image = nil
+            return
+        }
+        
+        let targetSize = CGSize(
+            width: max(1, photoView.bounds.width * UIScreen.main.scale),
+            height: max(1, photoView.bounds.height * UIScreen.main.scale)
+        )
+        
+        let transformer = SDImageResizingTransformer(size: targetSize, scaleMode: .aspectFill)
+        
+        photoView.sd_setImage(
+            with: url,
+            placeholderImage: nil,
+            options: [.scaleDownLargeImages, .retryFailed, .continueInBackground],
+            context: [.imageTransformer: transformer]
+        )
+    }
+    
+    public func cancelImageLoad() {
+        photoView.sd_cancelCurrentImageLoad()
     }
     
     // MARK: - Private methods
@@ -41,5 +63,15 @@ class PhotoCell: UITableViewCell {
         containerView.layer.masksToBounds = true
         shadowView.layer.cornerRadius = 8
         shadowView.layer.masksToBounds = false
+    }
+    
+    
+    // MARK: - UITableViewCell
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        cancelImageLoad()
+        photoView.image = nil
+        titleLabel.text = nil
+        authorLabel.text = nil
     }
 }
