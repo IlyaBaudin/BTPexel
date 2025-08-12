@@ -150,6 +150,13 @@ extension PhotosListViewController: UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let photoCell = cell as? PhotoCell else {
+            return
+        }
+        photoCell.cancelImageLoad()
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 105.0
     }
