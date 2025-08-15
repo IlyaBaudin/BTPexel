@@ -8,9 +8,9 @@
 import Foundation
 
 /// Container object to store and manage SDK constants
-internal struct PexelSDKConstants {
+public struct PexelSDKConstants {
     /// Production `PexelAPI` backend basic domain
-    static let pexelProductionDomain: String = "pexels.com"
+    public static let pexelProductionDomain: String = "pexels.com"
     /// `PexelAPI` auth key to perform REST API authorization
-    static let pexelAPIKey: String = "sKls6H5bbAR1kSLMDjSzXRQNG0OvsaKg1uJF2T6Po7h4yWNk3ZQ5Pn2d"
+    public static let pexelAPIKey: String = "sKls6H5bbAR1kSLMDjSzXRQNG0OvsaKg1uJF2T6Po7h4yWNk3ZQ5Pn2d"
 }

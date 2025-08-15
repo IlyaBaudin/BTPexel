@@ -19,7 +19,7 @@ class PhotosListViewController: UIViewController {
     private let refreshControl = UIRefreshControl()
     
     // MARK: Data
-    private var photos: [PexelPhotoProtocol] {
+    private var photos: [PexelSDK.PexelPhotoProtocol] {
         pexelSDK?.photos ?? []
     }
     

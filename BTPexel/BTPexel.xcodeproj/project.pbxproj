@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,8 @@
 		ED2A98692C58370000FFF19F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = ED2A98682C58370000FFF19F /* SDWebImage */; };
 		ED2A986B2C583D5D00FFF19F /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A986A2C583D5D00FFF19F /* PhotoDetailViewController.swift */; };
 		ED2A986D2C583D7800FFF19F /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2A986C2C583D7800FFF19F /* PhotoDetail.storyboard */; };
+		ED8AC36C2E4EA1DC0045AA9D /* PexelDomain in Frameworks */ = {isa = PBXBuildFile; productRef = ED8AC36B2E4EA1DC0045AA9D /* PexelDomain */; };
+		ED8AC36E2E4EA3890045AA9D /* LegacyPhotosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC36D2E4EA3850045AA9D /* LegacyPhotosRepository.swift */; };
 		EDE5A46E2C5955DA00D32FBC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A46D2C5955DA00D32FBC /* ShadowView.swift */; };
 		EDE5A4702C5AB26600D32FBC /* PexelSDKConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A46F2C5AB26600D32FBC /* PexelSDKConstants.swift */; };
 		EDE5A4712C5AB2A400D32FBC /* PexelSDKConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A46F2C5AB26600D32FBC /* PexelSDKConstants.swift */; };
@@ -121,6 +123,7 @@
 		ED2A98642C545D7B00FFF19F /* PexelCuratedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelCuratedResponse.swift; sourceTree = "<group>"; };
 		ED2A986A2C583D5D00FFF19F /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		ED2A986C2C583D7800FFF19F /* PhotoDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoDetail.storyboard; sourceTree = "<group>"; };
+		ED8AC36D2E4EA3850045AA9D /* LegacyPhotosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyPhotosRepository.swift; sourceTree = "<group>"; };
 		EDE5A46D2C5955DA00D32FBC /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		EDE5A46F2C5AB26600D32FBC /* PexelSDKConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelSDKConstants.swift; sourceTree = "<group>"; };
 		EDE5A4722C5AB36200D32FBC /* UrlBasicAuthRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBasicAuthRequestAdapter.swift; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8AC36C2E4EA1DC0045AA9D /* PexelDomain in Frameworks */,
 				ED2A98692C58370000FFF19F /* SDWebImage in Frameworks */,
 				ED2A98292C52FB4800FFF19F /* PexelSDK.framework in Frameworks */,
 			);
@@ -188,6 +192,7 @@
 		ED2A97D82C52F51E00FFF19F /* BTPexel */ = {
 			isa = PBXGroup;
 			children = (
+				ED8AC36D2E4EA3850045AA9D /* LegacyPhotosRepository.swift */,
 				EDF0704A2E45771D00355AF2 /* AppDelegate+SDWebImage.swift */,
 				ED2A97D92C52F51E00FFF19F /* AppDelegate.swift */,
 				ED2A97DB2C52F51E00FFF19F /* SceneDelegate.swift */,
@@ -396,6 +401,7 @@
 			name = BTPexel;
 			packageProductDependencies = (
 				ED2A98682C58370000FFF19F /* SDWebImage */,
+				ED8AC36B2E4EA1DC0045AA9D /* PexelDomain */,
 			);
 			productName = BTPexel;
 			productReference = ED2A97D62C52F51E00FFF19F /* BTPexel.app */;
@@ -471,6 +477,7 @@
 			mainGroup = ED2A97CD2C52F51E00FFF19F;
 			packageReferences = (
 				ED2A98662C5836EF00FFF19F /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				ED8AC36A2E4EA1DC0045AA9D /* XCLocalSwiftPackageReference "SPM/PexelDomain" */,
 			);
 			productRefGroup = ED2A97D72C52F51E00FFF19F /* Products */;
 			projectDirPath = "";
@@ -518,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF0704B2E45772A00355AF2 /* AppDelegate+SDWebImage.swift in Sources */,
+				ED8AC36E2E4EA3890045AA9D /* LegacyPhotosRepository.swift in Sources */,
 				EDE5A46E2C5955DA00D32FBC /* ShadowView.swift in Sources */,
 				ED2A980F2C52F90600FFF19F /* PhotoCell.swift in Sources */,
 				ED2A97DE2C52F51E00FFF19F /* PhotosListViewController.swift in Sources */,
@@ -956,6 +964,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		ED8AC36A2E4EA1DC0045AA9D /* XCLocalSwiftPackageReference "SPM/PexelDomain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = SPM/PexelDomain;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		ED2A98662C5836EF00FFF19F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -972,6 +987,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ED2A98662C5836EF00FFF19F /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		ED8AC36B2E4EA1DC0045AA9D /* PexelDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PexelDomain;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

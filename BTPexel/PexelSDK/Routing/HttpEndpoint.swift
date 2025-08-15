@@ -5,7 +5,7 @@
 //  Created by Ilia Baudin on 26.07.2024.
 //
 
-struct HttpEndpoint {
+public struct HttpEndpoint {
     
     // MARK: - Private properties
     /// Basic endpoint domain
@@ -28,7 +28,7 @@ struct HttpEndpoint {
     /// - Example: pexel.com
     ///
     /// - Parameter domain: basic domain
-    init(domain: String) {
+    public init(domain: String) {
         self.domain = domain
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 /// Represent `PexelPhoto` object from backend. Conforms to `PexelPhotoProtocol` and used on UI part to describe objects
-struct PexelPhoto: PexelPhotoProtocol, Codable {
+public struct PexelPhoto: PexelPhotoProtocol, Codable {
     
     enum CodingKeys: String, CodingKey {
         case photoId = "id"
@@ -19,14 +19,14 @@ struct PexelPhoto: PexelPhotoProtocol, Codable {
     }
     
     // MARK: - PexelPhotoProtocol
-    let photoId: Double
-    var photoUrl: String {
+    public let photoId: Double
+    public var photoUrl: String {
         src.large
     }
-    let authorName: String
-    let photoTitle: String
+    public let authorName: String
+    public let photoTitle: String
     
     // MARK: Codable fields
-    let postUrl: String
-    let src: SrcResponse
+    public let postUrl: String
+    public let src: SrcResponse
 }

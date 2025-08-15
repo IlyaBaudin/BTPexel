@@ -8,7 +8,7 @@
 import Foundation
 
 /// Implement `PexelAPIRouter` that conforms to `Routable` protocol. All endpoint calls should be described here in separate cases of enum
-enum PexelAPIRouter: Routable {
+public enum PexelAPIRouter: Routable {
     
     /// Photos-curated endpoint
     ///
@@ -16,7 +16,7 @@ enum PexelAPIRouter: Routable {
     case curatedPhotos(page: Int?, perPage: Int?)
     
     // MARK: - Routable
-    var path: String {
+    public var path: String {
         switch self {
         case .curatedPhotos(let page, let perPage):
             switch (page, perPage) {
@@ -32,14 +32,14 @@ enum PexelAPIRouter: Routable {
         }
     }
     
-    var method: String {
+    public var method: String {
         switch self {
         case .curatedPhotos:
             return HttpMethod.GET.rawValue
         }
     }
     
-    var parameters: Parameters? {
+    public var parameters: Parameters? {
         switch self {
         case .curatedPhotos:
             return nil

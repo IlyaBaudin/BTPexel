@@ -8,10 +8,10 @@
 import Foundation
 
 /// Define alias for request `Parameters` dictionary
-typealias Parameters = [String: Any]
+public typealias Parameters = [String: Any]
 
 /// Define abstract routing object for requests
-protocol Routable {
+public protocol Routable {
     /// endpoint path
     var path: String { get }
     /// expected endpoint method for manipulating data

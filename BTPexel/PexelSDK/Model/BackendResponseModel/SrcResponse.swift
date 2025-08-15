@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct SrcResponse: Codable {
-    let original: String
-    let large2x: String
-    let large: String
-    let medium: String
+public struct SrcResponse: Codable {
+    public let original: String
+    public let large2x: String
+    public let large: String
+    public let medium: String
 }

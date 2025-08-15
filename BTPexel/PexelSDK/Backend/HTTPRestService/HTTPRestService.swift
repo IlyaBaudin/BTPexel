@@ -8,9 +8,9 @@
 import Foundation
 
 /// Implementation of `NetworkServiceProtocol` that use HTTPRest backend with basic `URLRequest`s and response type of `Data`
-final class HTTPRestService: NetworkServiceProtocol {
+public final class HTTPRestService: NetworkServiceProtocol {
     
-    typealias ResponseType = Data
+    public typealias ResponseType = Data
     
     // MARK: - Private properties
     /// `URLSession` object with custom or default configuration to perform `URLRequest`
@@ -19,20 +19,20 @@ final class HTTPRestService: NetworkServiceProtocol {
     private let httpRestServiceQueue: DispatchQueue
     
     // MARK: - NetworkServiceProtocol properties
-    internal var requestComposer: any RequestComposerProtocol
-    internal var requestAdapter: (any RequestAdapterProtocol)?
+    public var requestComposer: any RequestComposerProtocol
+    public var requestAdapter: (any RequestAdapterProtocol)?
     
     // MARK: - Init
     /// Create `HTTPRestService` with required `RequestComposerProtocol` object. `RequestComposerProtocol` define how to create requests for execution.
     /// - Parameter requestComposer: composer that conforms to `RequestComposerProtocol`
-    init(requestComposer: any RequestComposerProtocol) {
+    public init(requestComposer: any RequestComposerProtocol) {
         urlSession = URLSession(configuration: .ephemeral)
         httpRestServiceQueue = DispatchQueue(label: "com.BTPexel.httpRestServiceQueue", qos: .userInitiated)
         self.requestComposer = requestComposer
     }
     
     // MARK: - NetworkServiceProtocol methods
-    internal func execute(request: any Routable, completion: @escaping ((Result<Data, any Error>) -> Void)) {
+    public func execute(request: any Routable, completion: @escaping ((Result<Data, any Error>) -> Void)) {
         
         guard let composer = requestComposer as? UrlRequestComposer else {
             completion(.failure(HTTPRestError.requestBuildFailure))

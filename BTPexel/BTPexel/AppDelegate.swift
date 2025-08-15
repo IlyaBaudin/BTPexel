@@ -7,19 +7,37 @@
 
 import UIKit
 import PexelSDK
+import PexelDomain
 
-var pexelSDK: PexelCoreSDK? {
+var pexelSDK: LegacyPexelSDKInterface? {
     (UIApplication.shared.delegate as? AppDelegate)?.pexelSDK
 }
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var pexelSDK: PexelCoreSDK?
+    var pexelSDK: (any LegacyPexelSDKInterface)?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         configureSDImageCache()
-        pexelSDK = PexelCoreSDK()
+                
+        // === Legacy networking stack (как в PexelCoreSDK.init()) ===
+        let httpEndpoint = HttpEndpoint(domain: PexelSDKConstants.pexelProductionDomain)
+        let requestComposer = UrlRequestComposer(httpEndpoint: httpEndpoint)
+        let networkService = HTTPRestService(requestComposer: requestComposer)
+        let requestAdapter = UrlBasicAuthRequestAdapter(token: PexelSDKConstants.pexelAPIKey)
+        networkService.requestAdapter = requestAdapter
+        let backend = PexelBackend(networkService: networkService)
+        
+        
+        let repo = LegacyPhotosRepository(backend: backend)
+        
+        
+        let service = PexelService(perPage: 30, repository: repo)
+        let legacyBridge = LegacyPexelSDKAdapter(service: service) // @MainActor
+        
+        pexelSDK = legacyBridge
+        
         return true
     }
 

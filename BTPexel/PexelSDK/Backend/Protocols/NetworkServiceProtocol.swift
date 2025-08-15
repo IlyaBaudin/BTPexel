@@ -8,7 +8,7 @@
 import Foundation
 
 /// Abstraction that should perform requests of type `Routable` over the network and return associated <`ResponseType`, `Error`> result. Any implementation can define any `ResponseType` that allow use different implementations if it's required or if communication protocol with Backend changed very often (like HTTP -> gRPC, or it was Parse backend and team would like migrate to custom backend based in HTTP/(S).
-protocol NetworkServiceProtocol {
+public protocol NetworkServiceProtocol {
     
     associatedtype ResponseType
     

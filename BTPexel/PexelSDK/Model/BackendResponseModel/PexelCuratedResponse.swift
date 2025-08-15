@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PexelCuratedResponse: Codable {
+public struct PexelCuratedResponse: Codable {
     enum CodingKeys: String, CodingKey {
         case page
         case perPage = "per_page"
@@ -16,5 +16,5 @@ struct PexelCuratedResponse: Codable {
     
     let page: Int
     let perPage: Int
-    let photos: [PexelPhoto]
+    public let photos: [PexelPhoto]
 }

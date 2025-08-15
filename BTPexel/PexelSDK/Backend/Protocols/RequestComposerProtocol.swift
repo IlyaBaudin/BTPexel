@@ -8,7 +8,7 @@
 import Foundation
 
 /// Abstraction that declare how to convert request of `Routable` type to some specific associated `RequestType`
-protocol RequestComposerProtocol {
+public protocol RequestComposerProtocol {
     
     associatedtype RequestType
     

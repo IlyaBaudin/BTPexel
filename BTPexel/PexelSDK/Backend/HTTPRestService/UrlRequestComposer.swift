@@ -8,9 +8,9 @@
 import Foundation
 
 /// Implementation of `RequestComposerProtocol` that transform `Routable` item to `URLRequest?` object
-final class UrlRequestComposer: RequestComposerProtocol {
+public final class UrlRequestComposer: RequestComposerProtocol {
     
-    typealias RequestType = URLRequest?
+    public typealias RequestType = URLRequest?
     
     // MARK: - Private properties
     /// `HttpEndpoint` that contain all necessary data for construct HTTP request
@@ -19,12 +19,12 @@ final class UrlRequestComposer: RequestComposerProtocol {
     // MARK: - Init
     /// Create `UrlRequestComposer` object using `HttpEndpoint` object
     /// - Parameter httpEndpoint: basic `HttpEndpoint` object
-    init(httpEndpoint: HttpEndpoint) {
+    public init(httpEndpoint: HttpEndpoint) {
         self.httpEndpoint = httpEndpoint
     }
     
     // MARK: - RequestComposerProtocol
-    internal func compose(request: any Routable) -> URLRequest? {
+    public func compose(request: any Routable) -> URLRequest? {
         guard let basicUrl = URL(string: httpEndpoint.httpEndpoint),
               let requestUrl = URL(string: request.path, relativeTo: basicUrl) else {
             print("Error: UrlRequestComposer - can't compose correct URLRequest")

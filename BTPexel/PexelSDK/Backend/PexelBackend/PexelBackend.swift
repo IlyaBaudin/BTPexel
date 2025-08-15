@@ -8,18 +8,18 @@
 import Foundation
 
 /// Implementation of `PexelBackend` that can use any `NetworkService` that conforms to  `NetworkServiceProtocol`
-final class PexelBackend<NetworkService: NetworkServiceProtocol>: BackendServiceProtocol {
+public final class PexelBackend<NetworkService: NetworkServiceProtocol>: BackendServiceProtocol {
     
     // MARK: - BackendServiceProtocol properties
     var networkService: NetworkService
     
     // MARK: - Init
-    init(networkService: NetworkService) {
+    public init(networkService: NetworkService) {
         self.networkService = networkService
     }
     
     // MARK: - BackendServiceProtocol methods
-    func fetchData<ResultObject: Codable>(
+    public func fetchData<ResultObject: Codable>(
         request: Routable,
         completion: @escaping((Result<ResultObject, Error>) -> Void)
     ) {

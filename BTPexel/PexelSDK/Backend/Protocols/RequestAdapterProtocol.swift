@@ -8,7 +8,7 @@
 import Foundation
 
 /// Abstraction that add some additional layer of transformation to request
-protocol RequestAdapterProtocol {
+public protocol RequestAdapterProtocol {
     
     associatedtype RequestType
     
