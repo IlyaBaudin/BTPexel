@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  FetchCuratedPhotos.swift
 //  PexelDomain
 //
 //  Created by Ilia Baudin on 13.08.2025.
