@@ -18,11 +18,14 @@ struct PhotoMapper {
             }
         }()
         
+        let hiResUrl = dto.src.large2x.isEmpty ? (dto.src.large.isEmpty ? nil : dto.src.large) : dto.src.large2x
+        
         return PexelDomain.PexelPhoto(
             id: id,
             photoTitle: dto.alt,
             authorName: dto.photographer,
-            photoUrl: dto.src.large
+            photoUrl: dto.src.medium,
+            hiResUrl: hiResUrl
         )
     }
     

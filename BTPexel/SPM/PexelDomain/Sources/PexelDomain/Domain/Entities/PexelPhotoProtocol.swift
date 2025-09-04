@@ -7,9 +7,4 @@
 
 import Foundation
 
-public protocol PexelPhotoProtocol {
-    var id: String { get }
-    var photoTitle: String { get }
-    var authorName: String { get }
-    var photoUrl: String { get }
-}
+

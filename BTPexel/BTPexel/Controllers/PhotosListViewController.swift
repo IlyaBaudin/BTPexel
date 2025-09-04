@@ -81,7 +81,7 @@ class PhotosListViewController: UIViewController {
     /// Navigate to Detail View Controller
     private func routeToDetailView(photo: PexelPhoto) {
         guard let photoDetailController = UIStoryboard(name: "PhotoDetail", bundle: nil).instantiateViewController(withIdentifier: "PhotoDetailViewController") as? PhotoDetailViewController else { return }
-        photoDetailController.photo = photo
+        photoDetailController.viewModel = PhotoDetailViewModel(photo: photo)
         navigationController?.pushViewController(photoDetailController, animated: true)
     }
     
