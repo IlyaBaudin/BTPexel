@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import protocol PexelSDK.PexelPhotoProtocol
+import PexelDomain
 import SDWebImage
 
 /// Detail View Controller for presenting all detail about selected post
@@ -14,6 +14,8 @@ class PhotoDetailViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet private weak var photoView: UIImageView!
+    
+    var photo: PexelPhoto?
     
     // MARK: - UIViewController
     override func viewWillAppear(_ animated: Bool) {
@@ -24,7 +26,7 @@ class PhotoDetailViewController: UIViewController {
     // MARK: - Private methods
     /// Configure controller content with selected photo
     private func setupController() {
-        guard let photo = pexelSDK?.selectedPhoto,
+        guard let photo,
             let photoURL = URL(string: photo.photoUrl) else {
             print("Error: PhotoDetailViewController, photoURL is nil")
             return
