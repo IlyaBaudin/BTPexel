@@ -15,70 +15,15 @@
 		ED2A97E62C52F51F00FFF19F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ED2A97E52C52F51F00FFF19F /* Base */; };
 		ED2A980D2C52F7A100FFF19F /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2A980C2C52F7A100FFF19F /* PhotoCell.xib */; };
 		ED2A980F2C52F90600FFF19F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A980E2C52F90600FFF19F /* PhotoCell.swift */; };
-		ED2A981E2C52FB4800FFF19F /* PexelSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2A98162C52FB4800FFF19F /* PexelSDK.framework */; };
-		ED2A98252C52FB4800FFF19F /* PexelBackendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A98242C52FB4800FFF19F /* PexelBackendTests.swift */; };
-		ED2A98262C52FB4800FFF19F /* PexelSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2A98182C52FB4800FFF19F /* PexelSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED2A98292C52FB4800FFF19F /* PexelSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2A98162C52FB4800FFF19F /* PexelSDK.framework */; };
-		ED2A982A2C52FB4800FFF19F /* PexelSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED2A98162C52FB4800FFF19F /* PexelSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ED2A98342C52FB7600FFF19F /* PexelPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A98332C52FB7600FFF19F /* PexelPhoto.swift */; };
-		ED2A984B2C52FC0D00FFF19F /* PexelCoreSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A984A2C52FC0D00FFF19F /* PexelCoreSDK.swift */; };
-		ED2A984D2C52FCB600FFF19F /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A984C2C52FCB600FFF19F /* Routable.swift */; };
-		ED2A98502C5300C500FFF19F /* HttpEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A984F2C5300C500FFF19F /* HttpEndpoint.swift */; };
-		ED2A98522C5300DF00FFF19F /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A98512C5300DF00FFF19F /* HttpMethod.swift */; };
-		ED2A98542C5300FA00FFF19F /* PexelAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A98532C5300FA00FFF19F /* PexelAPIRouter.swift */; };
-		ED2A98572C54386C00FFF19F /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A98562C54386C00FFF19F /* NetworkServiceProtocol.swift */; };
-		ED2A98592C543A6300FFF19F /* HTTPRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A98582C543A6300FFF19F /* HTTPRestService.swift */; };
-		ED2A985B2C543CC300FFF19F /* HTTPRestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A985A2C543CC300FFF19F /* HTTPRestError.swift */; };
-		ED2A985D2C54402400FFF19F /* BackendServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A985C2C54402400FFF19F /* BackendServiceProtocol.swift */; };
-		ED2A985F2C54412300FFF19F /* PexelBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A985E2C54412300FFF19F /* PexelBackend.swift */; };
-		ED2A98612C5444A300FFF19F /* UrlRequestComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A98602C5444A300FFF19F /* UrlRequestComposer.swift */; };
-		ED2A98632C5456C800FFF19F /* PexelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A98622C5456C800FFF19F /* PexelError.swift */; };
-		ED2A98652C545D7B00FFF19F /* PexelCuratedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A98642C545D7B00FFF19F /* PexelCuratedResponse.swift */; };
 		ED2A98692C58370000FFF19F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = ED2A98682C58370000FFF19F /* SDWebImage */; };
 		ED2A986B2C583D5D00FFF19F /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A986A2C583D5D00FFF19F /* PhotoDetailViewController.swift */; };
 		ED2A986D2C583D7800FFF19F /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2A986C2C583D7800FFF19F /* PhotoDetail.storyboard */; };
 		ED8AC36C2E4EA1DC0045AA9D /* PexelDomain in Frameworks */ = {isa = PBXBuildFile; productRef = ED8AC36B2E4EA1DC0045AA9D /* PexelDomain */; };
 		EDE5A46E2C5955DA00D32FBC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A46D2C5955DA00D32FBC /* ShadowView.swift */; };
-		EDE5A4702C5AB26600D32FBC /* PexelSDKConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A46F2C5AB26600D32FBC /* PexelSDKConstants.swift */; };
-		EDE5A4712C5AB2A400D32FBC /* PexelSDKConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A46F2C5AB26600D32FBC /* PexelSDKConstants.swift */; };
-		EDE5A4732C5AB36200D32FBC /* UrlBasicAuthRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A4722C5AB36200D32FBC /* UrlBasicAuthRequestAdapter.swift */; };
-		EDE5A4772C5AB3B900D32FBC /* RequestComposerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A4762C5AB3B900D32FBC /* RequestComposerProtocol.swift */; };
-		EDE5A4792C5AB3CA00D32FBC /* RequestAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A4782C5AB3CA00D32FBC /* RequestAdapterProtocol.swift */; };
-		EDE5A47C2C5AC55500D32FBC /* PexelBackendError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A47B2C5AC55500D32FBC /* PexelBackendError.swift */; };
-		EDE5A4802C5AC7E900D32FBC /* SrcResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A47F2C5AC7E900D32FBC /* SrcResponse.swift */; };
-		EDE5A4832C5AC81E00D32FBC /* PexelPhotoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A4822C5AC81E00D32FBC /* PexelPhotoProtocol.swift */; };
-		EDE5A4872C5AC91700D32FBC /* PexelDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A4862C5AC91700D32FBC /* PexelDataModel.swift */; };
-		EDE5A4892C5AC92B00D32FBC /* PexelPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A4882C5AC92B00D32FBC /* PexelPaginator.swift */; };
-		EDE5A48B2C5ADBE000D32FBC /* PexelPaginatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A48A2C5ADBE000D32FBC /* PexelPaginatorTests.swift */; };
 		EDF0704B2E45772A00355AF2 /* AppDelegate+SDWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0704A2E45771D00355AF2 /* AppDelegate+SDWebImage.swift */; };
 		EDFA85AC2E5F7AD7008C5417 /* PexelNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = EDFA85AB2E5F7AD7008C5417 /* PexelNetworking */; };
-		EDFA85AF2E5F7B07008C5417 /* PexelNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = EDFA85AE2E5F7B07008C5417 /* PexelNetworking */; };
 		EDFA85B22E68A1F7008C5417 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA85B12E68A1F7008C5417 /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		ED2A981F2C52FB4800FFF19F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2A97CE2C52F51E00FFF19F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED2A98152C52FB4800FFF19F;
-			remoteInfo = PexelSDK;
-		};
-		ED2A98212C52FB4800FFF19F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2A97CE2C52F51E00FFF19F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED2A97D52C52F51E00FFF19F;
-			remoteInfo = BTPexel;
-		};
-		ED2A98272C52FB4800FFF19F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2A97CE2C52F51E00FFF19F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED2A98152C52FB4800FFF19F;
-			remoteInfo = PexelSDK;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		ED2A982E2C52FB4800FFF19F /* Embed Frameworks */ = {
@@ -87,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ED2A982A2C52FB4800FFF19F /* PexelSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,38 +49,9 @@
 		ED2A97E72C52F51F00FFF19F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED2A980C2C52F7A100FFF19F /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 		ED2A980E2C52F90600FFF19F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
-		ED2A98162C52FB4800FFF19F /* PexelSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PexelSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED2A98182C52FB4800FFF19F /* PexelSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PexelSDK.h; sourceTree = "<group>"; };
-		ED2A981D2C52FB4800FFF19F /* PexelSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PexelSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED2A98242C52FB4800FFF19F /* PexelBackendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelBackendTests.swift; sourceTree = "<group>"; };
-		ED2A98332C52FB7600FFF19F /* PexelPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelPhoto.swift; sourceTree = "<group>"; };
-		ED2A984A2C52FC0D00FFF19F /* PexelCoreSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelCoreSDK.swift; sourceTree = "<group>"; };
-		ED2A984C2C52FCB600FFF19F /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
-		ED2A984F2C5300C500FFF19F /* HttpEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpEndpoint.swift; sourceTree = "<group>"; };
-		ED2A98512C5300DF00FFF19F /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
-		ED2A98532C5300FA00FFF19F /* PexelAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelAPIRouter.swift; sourceTree = "<group>"; };
-		ED2A98562C54386C00FFF19F /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
-		ED2A98582C543A6300FFF19F /* HTTPRestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRestService.swift; sourceTree = "<group>"; };
-		ED2A985A2C543CC300FFF19F /* HTTPRestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRestError.swift; sourceTree = "<group>"; };
-		ED2A985C2C54402400FFF19F /* BackendServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServiceProtocol.swift; sourceTree = "<group>"; };
-		ED2A985E2C54412300FFF19F /* PexelBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelBackend.swift; sourceTree = "<group>"; };
-		ED2A98602C5444A300FFF19F /* UrlRequestComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRequestComposer.swift; sourceTree = "<group>"; };
-		ED2A98622C5456C800FFF19F /* PexelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelError.swift; sourceTree = "<group>"; };
-		ED2A98642C545D7B00FFF19F /* PexelCuratedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelCuratedResponse.swift; sourceTree = "<group>"; };
 		ED2A986A2C583D5D00FFF19F /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		ED2A986C2C583D7800FFF19F /* PhotoDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoDetail.storyboard; sourceTree = "<group>"; };
 		EDE5A46D2C5955DA00D32FBC /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
-		EDE5A46F2C5AB26600D32FBC /* PexelSDKConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelSDKConstants.swift; sourceTree = "<group>"; };
-		EDE5A4722C5AB36200D32FBC /* UrlBasicAuthRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBasicAuthRequestAdapter.swift; sourceTree = "<group>"; };
-		EDE5A4762C5AB3B900D32FBC /* RequestComposerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestComposerProtocol.swift; sourceTree = "<group>"; };
-		EDE5A4782C5AB3CA00D32FBC /* RequestAdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAdapterProtocol.swift; sourceTree = "<group>"; };
-		EDE5A47A2C5AB87B00D32FBC /* BTPexel.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BTPexel.xctestplan; sourceTree = "<group>"; };
-		EDE5A47B2C5AC55500D32FBC /* PexelBackendError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelBackendError.swift; sourceTree = "<group>"; };
-		EDE5A47F2C5AC7E900D32FBC /* SrcResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SrcResponse.swift; sourceTree = "<group>"; };
-		EDE5A4822C5AC81E00D32FBC /* PexelPhotoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelPhotoProtocol.swift; sourceTree = "<group>"; };
-		EDE5A4862C5AC91700D32FBC /* PexelDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelDataModel.swift; sourceTree = "<group>"; };
-		EDE5A4882C5AC92B00D32FBC /* PexelPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelPaginator.swift; sourceTree = "<group>"; };
-		EDE5A48A2C5ADBE000D32FBC /* PexelPaginatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelPaginatorTests.swift; sourceTree = "<group>"; };
 		EDF0704A2E45771D00355AF2 /* AppDelegate+SDWebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SDWebImage.swift"; sourceTree = "<group>"; };
 		EDFA85B12E68A1F7008C5417 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,23 +64,6 @@
 				ED8AC36C2E4EA1DC0045AA9D /* PexelDomain in Frameworks */,
 				EDFA85AC2E5F7AD7008C5417 /* PexelNetworking in Frameworks */,
 				ED2A98692C58370000FFF19F /* SDWebImage in Frameworks */,
-				EDFA85AF2E5F7B07008C5417 /* PexelNetworking in Frameworks */,
-				ED2A98292C52FB4800FFF19F /* PexelSDK.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED2A98132C52FB4800FFF19F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED2A981A2C52FB4800FFF19F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED2A981E2C52FB4800FFF19F /* PexelSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				ED2A97D82C52F51E00FFF19F /* BTPexel */,
-				ED2A98172C52FB4800FFF19F /* PexelSDK */,
-				ED2A98232C52FB4800FFF19F /* PexelSDKTests */,
 				ED2A97D72C52F51E00FFF19F /* Products */,
 				ED2A98672C58370000FFF19F /* Frameworks */,
 			);
@@ -187,8 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				ED2A97D62C52F51E00FFF19F /* BTPexel.app */,
-				ED2A98162C52FB4800FFF19F /* PexelSDK.framework */,
-				ED2A981D2C52FB4800FFF19F /* PexelSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,62 +131,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		ED2A98172C52FB4800FFF19F /* PexelSDK */ = {
-			isa = PBXGroup;
-			children = (
-				EDE5A46F2C5AB26600D32FBC /* PexelSDKConstants.swift */,
-				ED2A98552C54385300FFF19F /* Backend */,
-				ED2A984E2C5300B700FFF19F /* Routing */,
-				ED2A98322C52FB6500FFF19F /* Model */,
-				ED2A98182C52FB4800FFF19F /* PexelSDK.h */,
-				ED2A984A2C52FC0D00FFF19F /* PexelCoreSDK.swift */,
-			);
-			path = PexelSDK;
-			sourceTree = "<group>";
-		};
-		ED2A98232C52FB4800FFF19F /* PexelSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				EDE5A47A2C5AB87B00D32FBC /* BTPexel.xctestplan */,
-				ED2A98242C52FB4800FFF19F /* PexelBackendTests.swift */,
-				EDE5A48A2C5ADBE000D32FBC /* PexelPaginatorTests.swift */,
-			);
-			path = PexelSDKTests;
-			sourceTree = "<group>";
-		};
-		ED2A98322C52FB6500FFF19F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EDE5A4812C5AC81500D32FBC /* Protocol */,
-				EDE5A4842C5AC86900D32FBC /* BackendResponseModel */,
-				EDE5A4852C5AC90200D32FBC /* Entities */,
-				EDE5A4862C5AC91700D32FBC /* PexelDataModel.swift */,
-				EDE5A4882C5AC92B00D32FBC /* PexelPaginator.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		ED2A984E2C5300B700FFF19F /* Routing */ = {
-			isa = PBXGroup;
-			children = (
-				EDE5A4752C5AB39E00D32FBC /* Protocols */,
-				ED2A984F2C5300C500FFF19F /* HttpEndpoint.swift */,
-				ED2A98512C5300DF00FFF19F /* HttpMethod.swift */,
-				ED2A98532C5300FA00FFF19F /* PexelAPIRouter.swift */,
-			);
-			path = Routing;
-			sourceTree = "<group>";
-		};
-		ED2A98552C54385300FFF19F /* Backend */ = {
-			isa = PBXGroup;
-			children = (
-				EDE5A4742C5AB39300D32FBC /* Protocols */,
-				EDE5A47E2C5AC61E00D32FBC /* HTTPRestService */,
-				EDE5A47D2C5AC61200D32FBC /* PexelBackend */,
-			);
-			path = Backend;
-			sourceTree = "<group>";
-		};
 		ED2A98672C58370000FFF19F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,71 +147,6 @@
 			path = PhotoCell;
 			sourceTree = "<group>";
 		};
-		EDE5A4742C5AB39300D32FBC /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				ED2A98562C54386C00FFF19F /* NetworkServiceProtocol.swift */,
-				EDE5A4762C5AB3B900D32FBC /* RequestComposerProtocol.swift */,
-				EDE5A4782C5AB3CA00D32FBC /* RequestAdapterProtocol.swift */,
-				ED2A985C2C54402400FFF19F /* BackendServiceProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		EDE5A4752C5AB39E00D32FBC /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				ED2A984C2C52FCB600FFF19F /* Routable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		EDE5A47D2C5AC61200D32FBC /* PexelBackend */ = {
-			isa = PBXGroup;
-			children = (
-				ED2A985E2C54412300FFF19F /* PexelBackend.swift */,
-				EDE5A47B2C5AC55500D32FBC /* PexelBackendError.swift */,
-			);
-			path = PexelBackend;
-			sourceTree = "<group>";
-		};
-		EDE5A47E2C5AC61E00D32FBC /* HTTPRestService */ = {
-			isa = PBXGroup;
-			children = (
-				ED2A98602C5444A300FFF19F /* UrlRequestComposer.swift */,
-				EDE5A4722C5AB36200D32FBC /* UrlBasicAuthRequestAdapter.swift */,
-				ED2A98582C543A6300FFF19F /* HTTPRestService.swift */,
-				ED2A985A2C543CC300FFF19F /* HTTPRestError.swift */,
-			);
-			path = HTTPRestService;
-			sourceTree = "<group>";
-		};
-		EDE5A4812C5AC81500D32FBC /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				EDE5A4822C5AC81E00D32FBC /* PexelPhotoProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		EDE5A4842C5AC86900D32FBC /* BackendResponseModel */ = {
-			isa = PBXGroup;
-			children = (
-				ED2A98642C545D7B00FFF19F /* PexelCuratedResponse.swift */,
-				EDE5A47F2C5AC7E900D32FBC /* SrcResponse.swift */,
-			);
-			path = BackendResponseModel;
-			sourceTree = "<group>";
-		};
-		EDE5A4852C5AC90200D32FBC /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				ED2A98332C52FB7600FFF19F /* PexelPhoto.swift */,
-				ED2A98622C5456C800FFF19F /* PexelError.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
 		EDFA85B02E68A1EE008C5417 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,17 +156,6 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		ED2A98112C52FB4800FFF19F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED2A98262C52FB4800FFF19F /* PexelSDK.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		ED2A97D52C52F51E00FFF19F /* BTPexel */ = {
@@ -408,7 +170,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				ED2A98282C52FB4800FFF19F /* PBXTargetDependency */,
 			);
 			name = BTPexel;
 			packageProductDependencies = (
@@ -421,43 +182,6 @@
 			productReference = ED2A97D62C52F51E00FFF19F /* BTPexel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ED2A98152C52FB4800FFF19F /* PexelSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ED2A982B2C52FB4800FFF19F /* Build configuration list for PBXNativeTarget "PexelSDK" */;
-			buildPhases = (
-				ED2A98112C52FB4800FFF19F /* Headers */,
-				ED2A98122C52FB4800FFF19F /* Sources */,
-				ED2A98132C52FB4800FFF19F /* Frameworks */,
-				ED2A98142C52FB4800FFF19F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PexelSDK;
-			productName = PexelSDK;
-			productReference = ED2A98162C52FB4800FFF19F /* PexelSDK.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		ED2A981C2C52FB4800FFF19F /* PexelSDKTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ED2A982F2C52FB4800FFF19F /* Build configuration list for PBXNativeTarget "PexelSDKTests" */;
-			buildPhases = (
-				ED2A98192C52FB4800FFF19F /* Sources */,
-				ED2A981A2C52FB4800FFF19F /* Frameworks */,
-				ED2A981B2C52FB4800FFF19F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ED2A98202C52FB4800FFF19F /* PBXTargetDependency */,
-				ED2A98222C52FB4800FFF19F /* PBXTargetDependency */,
-			);
-			name = PexelSDKTests;
-			productName = PexelSDKTests;
-			productReference = ED2A981D2C52FB4800FFF19F /* PexelSDKTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -469,13 +193,6 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					ED2A97D52C52F51E00FFF19F = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					ED2A98152C52FB4800FFF19F = {
-						CreatedOnToolsVersion = 15.4;
-						LastSwiftMigration = 1540;
-					};
-					ED2A981C2C52FB4800FFF19F = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -499,8 +216,6 @@
 			projectRoot = "";
 			targets = (
 				ED2A97D52C52F51E00FFF19F /* BTPexel */,
-				ED2A98152C52FB4800FFF19F /* PexelSDK */,
-				ED2A981C2C52FB4800FFF19F /* PexelSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -515,20 +230,6 @@
 				ED2A97E32C52F51F00FFF19F /* Assets.xcassets in Resources */,
 				ED2A97E62C52F51F00FFF19F /* Base in Resources */,
 				ED2A97E12C52F51E00FFF19F /* Base in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED2A98142C52FB4800FFF19F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED2A981B2C52FB4800FFF19F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,65 +251,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED2A98122C52FB4800FFF19F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED2A98342C52FB7600FFF19F /* PexelPhoto.swift in Sources */,
-				ED2A98572C54386C00FFF19F /* NetworkServiceProtocol.swift in Sources */,
-				EDE5A4872C5AC91700D32FBC /* PexelDataModel.swift in Sources */,
-				ED2A985F2C54412300FFF19F /* PexelBackend.swift in Sources */,
-				EDE5A4792C5AB3CA00D32FBC /* RequestAdapterProtocol.swift in Sources */,
-				ED2A984D2C52FCB600FFF19F /* Routable.swift in Sources */,
-				ED2A98652C545D7B00FFF19F /* PexelCuratedResponse.swift in Sources */,
-				ED2A98592C543A6300FFF19F /* HTTPRestService.swift in Sources */,
-				EDE5A47C2C5AC55500D32FBC /* PexelBackendError.swift in Sources */,
-				EDE5A4832C5AC81E00D32FBC /* PexelPhotoProtocol.swift in Sources */,
-				EDE5A4772C5AB3B900D32FBC /* RequestComposerProtocol.swift in Sources */,
-				ED2A98522C5300DF00FFF19F /* HttpMethod.swift in Sources */,
-				ED2A98502C5300C500FFF19F /* HttpEndpoint.swift in Sources */,
-				EDE5A4802C5AC7E900D32FBC /* SrcResponse.swift in Sources */,
-				EDE5A4732C5AB36200D32FBC /* UrlBasicAuthRequestAdapter.swift in Sources */,
-				ED2A98632C5456C800FFF19F /* PexelError.swift in Sources */,
-				ED2A985D2C54402400FFF19F /* BackendServiceProtocol.swift in Sources */,
-				ED2A98542C5300FA00FFF19F /* PexelAPIRouter.swift in Sources */,
-				ED2A985B2C543CC300FFF19F /* HTTPRestError.swift in Sources */,
-				ED2A984B2C52FC0D00FFF19F /* PexelCoreSDK.swift in Sources */,
-				EDE5A4892C5AC92B00D32FBC /* PexelPaginator.swift in Sources */,
-				ED2A98612C5444A300FFF19F /* UrlRequestComposer.swift in Sources */,
-				EDE5A4702C5AB26600D32FBC /* PexelSDKConstants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED2A98192C52FB4800FFF19F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EDE5A48B2C5ADBE000D32FBC /* PexelPaginatorTests.swift in Sources */,
-				ED2A98252C52FB4800FFF19F /* PexelBackendTests.swift in Sources */,
-				EDE5A4712C5AB2A400D32FBC /* PexelSDKConstants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ED2A98202C52FB4800FFF19F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ED2A98152C52FB4800FFF19F /* PexelSDK */;
-			targetProxy = ED2A981F2C52FB4800FFF19F /* PBXContainerItemProxy */;
-		};
-		ED2A98222C52FB4800FFF19F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ED2A97D52C52F51E00FFF19F /* BTPexel */;
-			targetProxy = ED2A98212C52FB4800FFF19F /* PBXContainerItemProxy */;
-		};
-		ED2A98282C52FB4800FFF19F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ED2A98152C52FB4800FFF19F /* PexelSDK */;
-			targetProxy = ED2A98272C52FB4800FFF19F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ED2A97DF2C52F51E00FFF19F /* PhotoList.storyboard */ = {
@@ -752,7 +395,6 @@
 		ED2A98012C52F51F00FFF19F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -785,7 +427,6 @@
 		ED2A98022C52F51F00FFF19F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -815,129 +456,6 @@
 			};
 			name = Release;
 		};
-		ED2A982C2C52FB4800FFF19F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HR4X3C4SGL;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.IliaBaudin.PexelSDK;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		ED2A982D2C52FB4800FFF19F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HR4X3C4SGL;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.IliaBaudin.PexelSDK;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		ED2A98302C52FB4800FFF19F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HR4X3C4SGL;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.IliaBaudin.PexelSDKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		ED2A98312C52FB4800FFF19F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HR4X3C4SGL;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.IliaBaudin.PexelSDKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -955,24 +473,6 @@
 			buildConfigurations = (
 				ED2A98012C52F51F00FFF19F /* Debug */,
 				ED2A98022C52F51F00FFF19F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ED2A982B2C52FB4800FFF19F /* Build configuration list for PBXNativeTarget "PexelSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ED2A982C2C52FB4800FFF19F /* Debug */,
-				ED2A982D2C52FB4800FFF19F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ED2A982F2C52FB4800FFF19F /* Build configuration list for PBXNativeTarget "PexelSDKTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ED2A98302C52FB4800FFF19F /* Debug */,
-				ED2A98312C52FB4800FFF19F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
