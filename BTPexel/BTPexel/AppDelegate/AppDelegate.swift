@@ -9,10 +9,6 @@ import UIKit
 import PexelDomain
 import PexelNetworking
 
-func appService() -> PexelService {
-    (UIApplication.shared.delegate as! AppDelegate).pexelService
-}
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

@@ -22,7 +22,7 @@ struct PhotoMapper {
             id: id,
             photoTitle: dto.alt,
             authorName: dto.photographer,
-            photoUrl: dto.src.medium
+            photoUrl: dto.src.large
         )
     }
     

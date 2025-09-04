@@ -7,6 +7,7 @@
 
 import SDWebImage
 
+// MARK: - AppDelegate + SDWebImage
 extension AppDelegate {
     internal func configureSDImageCache() {
         let cache = SDImageCache.shared
