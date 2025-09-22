@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import protocol PexelSDK.PexelPhotoProtocol
+import PexelDomain
 import SDWebImage
 
 /// PhotoCell item for UITableView that contains a list of photo posts
@@ -28,7 +28,7 @@ class PhotoCell: UITableViewCell {
     // MARK: - Public methods
     /// Configure cell with photo object that contains all required fields to present it to user
     /// - Parameter photo: object that represents photo item
-    public func configureCell(photo: PexelPhotoProtocol) {
+    public func configureCell(photo: PexelPhoto) {
         titleLabel.text = photo.photoTitle
         authorLabel.text = photo.authorName
         

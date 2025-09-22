@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PexelSDK
+import PexelDomain
 
 /// Photos View Controller that manage photos tableView
 class PhotosListViewController: UIViewController {
@@ -18,27 +18,17 @@ class PhotosListViewController: UIViewController {
     // MARK: UI
     private let refreshControl = UIRefreshControl()
     
-    // MARK: Data
-    private var photos: [PexelPhotoProtocol] {
-        pexelSDK?.photos ?? []
-    }
-    
-    private var loadingError: Error? {
-        pexelSDK?.dataLoadingError
-    }
+    private lazy var viewModel = FeedViewModel(service: appService())
     
     // MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         // setup controller configuration on controller load
         setupController()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        // refresh data on controller appear
-        getPhotos(isInitialLoading: true) {
-            self.updateUI()
+        
+        Task { [weak self] in
+            await self?.viewModel.reload()
+            self?.updateUI()
         }
     }
     
@@ -60,48 +50,39 @@ class PhotosListViewController: UIViewController {
     private func updateUI() {
         DispatchQueue.main.async {
             self.refreshControl.endRefreshing()
-            guard let loadingError = self.loadingError else {
+            if let error = self.viewModel.loadingError {
+                self.routeToErrorView(error: error)
+            } else {
                 self.tableView.reloadData()
-                return
             }
-            self.routeToErrorView(error: loadingError)
         }
-    }
-    
-    // MARK: Data
-    /// Download photos from remote storage
-    /// - Parameters:
-    ///   - isInitialLoading: `true` if we need to perform initial loading OR fully reload data, `false` if need to load next part of data
-    ///   - completion: callback that indicates that data has been loaded OR any error happened
-    private func getPhotos(isInitialLoading: Bool, completion: @escaping(() -> Void)) {
-        pexelSDK?.getPhotos(isInitialLoad: isInitialLoading, completion: { result in
-            completion()
-        })
     }
     
     // MARK: - Actions
     /// Action that reload data when user pull to refresh `UITableView`
     @objc private func refreshTableView(sender: AnyObject) {
-        getPhotos(isInitialLoading: true) {
-            self.updateUI()
+        Task { [weak self] in
+            await self?.viewModel.reload()
+            self?.updateUI()
         }
     }
     
     /// Handle user photo selection
     /// - Parameter indexPath: `IndexPath` in `UITableView` that user tap
-    private func selectPhoto(indexPath: IndexPath) {
-        guard indexPath.row < photos.count else {
+    private func selectPhoto(indexPath: IndexPath) -> PexelPhoto? {
+        guard indexPath.row < viewModel.photos.count else {
             print("Error: Selected index is out of range")
-            return
+            return nil
         }
-        pexelSDK?.selectPhoto(photo: photos[indexPath.row])
+        return viewModel.photos[indexPath.row]
     }
     
     // MARK: - Routing
     /// Navigate to Detail View Controller
-    private func routeToDetailView() {
+    private func routeToDetailView(photo: PexelPhoto) {
         guard let photoDetailController = UIStoryboard(name: "PhotoDetail", bundle: nil).instantiateViewController(withIdentifier: "PhotoDetailViewController") as? PhotoDetailViewController else { return }
-        self.navigationController?.pushViewController(photoDetailController, animated: true)
+        photoDetailController.viewModel = PhotoDetailViewModel(photo: photo, service: appService())
+        navigationController?.pushViewController(photoDetailController, animated: true)
     }
     
     /// Navigate to Error View
@@ -120,7 +101,7 @@ class PhotosListViewController: UIViewController {
 extension PhotosListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return photos.count
+        return viewModel.photos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -137,15 +118,16 @@ extension PhotosListViewController: UITableViewDelegate {
             print("Error: UITableViewCell has got unexpected type")
             return
         }
-        guard indexPath.row < photos.count else {
+        guard indexPath.row < viewModel.photos.count else {
             print("Error: UITableViewCell index is out of range")
             return
         }
-        photoCell.configureCell(photo: photos[indexPath.row])
+        photoCell.configureCell(photo: viewModel.photos[indexPath.row])
         // simplest and straightforward strategy to load next piece of data
-        if indexPath.row == (photos.count - 1) {
-            getPhotos(isInitialLoading: false) {
-                self.updateUI()
+        if indexPath.row == (viewModel.photos.count - 1) {
+            Task { [weak self] in
+                await self?.viewModel.loadMore()
+                self?.updateUI()
             }
         }
     }
@@ -163,11 +145,14 @@ extension PhotosListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        guard indexPath.row < photos.count else {
+        guard indexPath.row < viewModel.photos.count else {
             print("Error: Selected index is out of range")
             return
         }
-        selectPhoto(indexPath: indexPath)
-        routeToDetailView()
+        guard let photo = selectPhoto(indexPath: indexPath) else {
+            return
+        }
+        
+        routeToDetailView(photo: photo)
     }
 }

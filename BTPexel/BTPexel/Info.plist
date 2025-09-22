@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>PEXELS_API_KEY</key>
+	<string>sKls6H5bbAR1kSLMDjSzXRQNG0OvsaKg1uJF2T6Po7h4yWNk3ZQ5Pn2d</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

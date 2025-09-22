@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "5A4A8E2C-4200-4085-AF81-176DE4027E82",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "PexelNetworkingTests",
+        "name" : "PexelNetworkingTests"
+      }
+    }
+  ],
+  "version" : 1
+}
