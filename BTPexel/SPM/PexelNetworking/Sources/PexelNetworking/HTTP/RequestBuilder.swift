@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct RequestBuilder {
+internal struct RequestBuilder {
+    
     let config: PexelsConfig
     
     func makeRequest(route: PexelsRoute) throws -> URLRequest {

@@ -7,25 +7,34 @@
 
 import Foundation
 
+/// Pexel service that provide data to consumer and receive actions from user
 public final actor PexelService {
+    
+    // MARK: - Public properties
+    // Read API
+    public var photos: [PexelPhoto] { items }
+    public var dataLoadingError: Error? { lastError }
+    public var selectedPhoto: PexelPhoto? {
+        get async { await selector.selected }
+    }
+    // MARK: - Read-only properties
     // State
     private(set) var items: [PexelPhoto] = []
     private(set) var lastError: Error?
+    
+    // MARK: - Private properties
     private let paginator: Paginator
     private let fetchCurated: FetchCuratedPhotos
     private let selector: SelectPhoto
     
-    // Init
+    // MARK: - Init
     public init(perPage: Int, repository: PhotosRepository) {
         self.paginator = Paginator(perPage: perPage)
         self.fetchCurated = FetchCuratedPhotos(repo: repository)
         self.selector = SelectPhoto()
     }
     
-    // Read API
-    public var photos: [PexelPhoto] { items }
-    public var dataLoadingError: Error? { lastError }
-    
+    // MARK: - Public methods
     // Actions
     public func getPhotos(isInitialLoad: Bool) async {
         if isInitialLoad {
@@ -47,4 +56,7 @@ public final actor PexelService {
         await selector.select(photo)
     }
     
+    public func clearPhoto() async {
+        await selector.clear()
+    }
 }

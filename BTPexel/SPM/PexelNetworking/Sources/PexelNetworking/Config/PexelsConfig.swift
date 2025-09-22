@@ -8,9 +8,11 @@
 import Foundation
 
 public struct PexelsConfig: Sendable, Equatable {
+    // MARK: - Properties
     public let baseURL: URL
     public let apiKey: String
     
+    // MARK: - Init
     public init(baseURL: URL = URL(string: "https://api.pexels.com/v1/")!,
                 apiKey: String) {
         self.baseURL = baseURL

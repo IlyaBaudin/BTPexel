@@ -7,15 +7,13 @@
 
 import Foundation
 
-public protocol HTTPClientProtocol: Sendable {
-    func get<T: Decodable & Sendable>(_ route: PexelsRoute) async throws -> T
-}
-
 public actor HTTPClient: HTTPClientProtocol {
+    // MARK: - Properties
     private let session: URLSession
     private let builder: RequestBuilder
     private let decoder: JSONDecoder
     
+    // MARK: - Init
     public init(config: PexelsConfig,
                 session: URLSession = .shared,
                 decoder: JSONDecoder = .pexels()) {
@@ -24,6 +22,7 @@ public actor HTTPClient: HTTPClientProtocol {
         self.decoder = decoder
     }
     
+    // MARK: -  HTTPClientProtocol
     public func get<T: Decodable & Sendable>(_ route: PexelsRoute) async throws -> T {
         let request = try builder.makeRequest(route: route)
         do {
@@ -48,5 +47,4 @@ public actor HTTPClient: HTTPClientProtocol {
             throw HTTPError.transport(error)
         }
     }
-    
 }

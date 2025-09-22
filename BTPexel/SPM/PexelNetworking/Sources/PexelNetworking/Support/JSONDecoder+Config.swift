@@ -9,7 +9,7 @@ import Foundation
 
 extension JSONDecoder {
     public static func pexels() -> JSONDecoder {
-        var decoder = JSONDecoder()
+        let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .useDefaultKeys
         decoder.dateDecodingStrategy = .iso8601
         return decoder

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Thread-safe paginator object for loading image batches with offset and limit from server
 public actor Paginator {
     // MARK: - Private properties
     private nonisolated static let initialPage: Int = 1
@@ -16,12 +17,14 @@ public actor Paginator {
     public private(set) var perPage: Int
     public private(set) var isAllLoaded: Bool
     
+    // MARK: - Init
     public init(page: Int? = nil, perPage: Int) {
         self.page = page ?? Self.initialPage
         self.perPage = perPage
         self.isAllLoaded = false
     }
     
+    // MARK: - Public methods
     public func nextPageIfPossible() -> Int? {
         guard !isAllLoaded else { return nil }
         defer {

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Main data model for photo object
 public struct PexelPhoto: Sendable, Equatable {
     
     // MARK: - Properties

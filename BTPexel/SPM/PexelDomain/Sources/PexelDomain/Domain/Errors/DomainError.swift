@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Main error object for errors that can happen inside package 
 public enum DomainError: Error, LocalizedError {
     case endOfFeed
     case underlying(Error)

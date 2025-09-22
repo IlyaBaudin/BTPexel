@@ -27,6 +27,7 @@ class PhotoDetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         photoView.sd_cancelCurrentImageLoad()
         SDWebImageManager.shared.cancelAll()
+        viewModel.clearSelection()
     }
     
     // MARK: - Private methods

@@ -8,7 +8,8 @@
 import Foundation
 import PexelDomain
 
-struct PhotoMapper {
+internal struct PhotoMapper {
+    
     func map(_ dto: PhotoDTO) -> PexelDomain.PexelPhoto {
         let id: String = {
             if dto.id.rounded() == dto.id {

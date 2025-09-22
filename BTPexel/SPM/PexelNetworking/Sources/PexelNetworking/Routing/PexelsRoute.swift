@@ -16,8 +16,8 @@ public enum PexelsRoute: Sendable {
     
     var path: String {
         switch self {
-        case .curated(let page, let perPage):
-            "/curated"
+        case .curated(_, _):
+            "curated"
         }
     }
     
