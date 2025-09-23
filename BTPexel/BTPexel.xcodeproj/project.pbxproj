@@ -7,24 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED2A97DA2C52F51E00FFF19F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A97D92C52F51E00FFF19F /* AppDelegate.swift */; };
-		ED2A97DC2C52F51E00FFF19F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A97DB2C52F51E00FFF19F /* SceneDelegate.swift */; };
-		ED2A97DE2C52F51E00FFF19F /* PhotosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A97DD2C52F51E00FFF19F /* PhotosListViewController.swift */; };
-		ED2A97E12C52F51E00FFF19F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ED2A97E02C52F51E00FFF19F /* Base */; };
 		ED2A97E32C52F51F00FFF19F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2A97E22C52F51F00FFF19F /* Assets.xcassets */; };
 		ED2A97E62C52F51F00FFF19F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ED2A97E52C52F51F00FFF19F /* Base */; };
-		ED2A980D2C52F7A100FFF19F /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2A980C2C52F7A100FFF19F /* PhotoCell.xib */; };
-		ED2A980F2C52F90600FFF19F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A980E2C52F90600FFF19F /* PhotoCell.swift */; };
-		ED2A98692C58370000FFF19F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = ED2A98682C58370000FFF19F /* SDWebImage */; };
-		ED2A986B2C583D5D00FFF19F /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A986A2C583D5D00FFF19F /* PhotoDetailViewController.swift */; };
-		ED2A986D2C583D7800FFF19F /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2A986C2C583D7800FFF19F /* PhotoDetail.storyboard */; };
-		ED8293412E6A0075000E8016 /* AppDelegate+Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8293402E6A0075000E8016 /* AppDelegate+Support.swift */; };
+		ED30B8232E81CAE5004D759D /* PexelNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = EDFA85AE2E5F7B07008C5417 /* PexelNetworking */; };
+		ED30B8252E81D28F004D759D /* BTPexelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30B8242E81D28A004D759D /* BTPexelApp.swift */; };
+		ED30B82A2E81D30E004D759D /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30B8292E81D30D004D759D /* AppContainer.swift */; };
+		ED30B82E2E81D6F2004D759D /* PhotosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30B82D2E81D6F1004D759D /* PhotosListView.swift */; };
+		ED30B8302E81D703004D759D /* PhotosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30B82F2E81D702004D759D /* PhotosListViewModel.swift */; };
+		ED30B8322E81D8BC004D759D /* PhotoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30B8312E81D8B8004D759D /* PhotoRow.swift */; };
+		ED30B8352E81E226004D759D /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30B8342E81E223004D759D /* PhotoDetailView.swift */; };
+		ED30B8382E821B58004D759D /* ShadowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30B8372E821B58004D759D /* ShadowCard.swift */; };
 		ED8293442E6A2CD6000E8016 /* PhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8293432E6A2CD1000E8016 /* PhotoDetailViewModel.swift */; };
 		ED8AC36C2E4EA1DC0045AA9D /* PexelDomain in Frameworks */ = {isa = PBXBuildFile; productRef = ED8AC36B2E4EA1DC0045AA9D /* PexelDomain */; };
-		EDE5A46E2C5955DA00D32FBC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5A46D2C5955DA00D32FBC /* ShadowView.swift */; };
-		EDF0704B2E45772A00355AF2 /* AppDelegate+SDWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0704A2E45771D00355AF2 /* AppDelegate+SDWebImage.swift */; };
 		EDFA85AC2E5F7AD7008C5417 /* PexelNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = EDFA85AB2E5F7AD7008C5417 /* PexelNetworking */; };
-		EDFA85B22E68A1F7008C5417 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA85B12E68A1F7008C5417 /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,22 +37,17 @@
 
 /* Begin PBXFileReference section */
 		ED2A97D62C52F51E00FFF19F /* BTPexel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTPexel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED2A97D92C52F51E00FFF19F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED2A97DB2C52F51E00FFF19F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED2A97DD2C52F51E00FFF19F /* PhotosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewController.swift; sourceTree = "<group>"; };
-		ED2A97E02C52F51E00FFF19F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PhotoList.storyboard; sourceTree = "<group>"; };
 		ED2A97E22C52F51F00FFF19F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED2A97E52C52F51F00FFF19F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED2A97E72C52F51F00FFF19F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED2A980C2C52F7A100FFF19F /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
-		ED2A980E2C52F90600FFF19F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
-		ED2A986A2C583D5D00FFF19F /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
-		ED2A986C2C583D7800FFF19F /* PhotoDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoDetail.storyboard; sourceTree = "<group>"; };
-		ED8293402E6A0075000E8016 /* AppDelegate+Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Support.swift"; sourceTree = "<group>"; };
+		ED30B8242E81D28A004D759D /* BTPexelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTPexelApp.swift; sourceTree = "<group>"; };
+		ED30B8292E81D30D004D759D /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		ED30B82D2E81D6F1004D759D /* PhotosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListView.swift; sourceTree = "<group>"; };
+		ED30B82F2E81D702004D759D /* PhotosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewModel.swift; sourceTree = "<group>"; };
+		ED30B8312E81D8B8004D759D /* PhotoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRow.swift; sourceTree = "<group>"; };
+		ED30B8342E81E223004D759D /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		ED30B8372E821B58004D759D /* ShadowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowCard.swift; sourceTree = "<group>"; };
 		ED8293432E6A2CD1000E8016 /* PhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewModel.swift; sourceTree = "<group>"; };
-		EDE5A46D2C5955DA00D32FBC /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
-		EDF0704A2E45771D00355AF2 /* AppDelegate+SDWebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SDWebImage.swift"; sourceTree = "<group>"; };
-		EDFA85B12E68A1F7008C5417 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED30B8232E81CAE5004D759D /* PexelNetworking in Frameworks */,
 				ED8AC36C2E4EA1DC0045AA9D /* PexelDomain in Frameworks */,
 				EDFA85AC2E5F7AD7008C5417 /* PexelNetworking in Frameworks */,
-				ED2A98692C58370000FFF19F /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,43 +84,20 @@
 		ED2A97D82C52F51E00FFF19F /* BTPexel */ = {
 			isa = PBXGroup;
 			children = (
-				ED8293422E6A00B7000E8016 /* AppDelegate */,
-				EDFA85B02E68A1EE008C5417 /* ViewModel */,
-				ED2A98092C52F6F800FFF19F /* View */,
-				ED2A980B2C52F70700FFF19F /* Controllers */,
+				ED30B8242E81D28A004D759D /* BTPexelApp.swift */,
+				ED30B8272E81D2FE004D759D /* App */,
 				ED2A980A2C52F6FF00FFF19F /* Storyboards */,
-				ED2A97E22C52F51F00FFF19F /* Assets.xcassets */,
-				ED2A97E72C52F51F00FFF19F /* Info.plist */,
+				ED30B8262E81D2A5004D759D /* Resources */,
 			);
 			path = BTPexel;
-			sourceTree = "<group>";
-		};
-		ED2A98092C52F6F800FFF19F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				EDE5A46C2C5955CC00D32FBC /* PhotoCell */,
-				EDE5A46D2C5955DA00D32FBC /* ShadowView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		ED2A980A2C52F6FF00FFF19F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				ED2A97DF2C52F51E00FFF19F /* PhotoList.storyboard */,
-				ED2A986C2C583D7800FFF19F /* PhotoDetail.storyboard */,
 				ED2A97E42C52F51F00FFF19F /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		ED2A980B2C52F70700FFF19F /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				ED2A97DD2C52F51E00FFF19F /* PhotosListViewController.swift */,
-				ED2A986A2C583D5D00FFF19F /* PhotoDetailViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		ED2A98672C58370000FFF19F /* Frameworks */ = {
@@ -140,33 +107,67 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ED8293422E6A00B7000E8016 /* AppDelegate */ = {
+		ED30B8262E81D2A5004D759D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EDF0704A2E45771D00355AF2 /* AppDelegate+SDWebImage.swift */,
-				ED8293402E6A0075000E8016 /* AppDelegate+Support.swift */,
-				ED2A97D92C52F51E00FFF19F /* AppDelegate.swift */,
-				ED2A97DB2C52F51E00FFF19F /* SceneDelegate.swift */,
+				ED2A97E22C52F51F00FFF19F /* Assets.xcassets */,
+				ED2A97E72C52F51F00FFF19F /* Info.plist */,
 			);
-			path = AppDelegate;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		EDE5A46C2C5955CC00D32FBC /* PhotoCell */ = {
+		ED30B8272E81D2FE004D759D /* App */ = {
 			isa = PBXGroup;
 			children = (
-				ED2A980C2C52F7A100FFF19F /* PhotoCell.xib */,
-				ED2A980E2C52F90600FFF19F /* PhotoCell.swift */,
+				ED30B82B2E81D6E1004D759D /* Features */,
+				ED30B8282E81D306004D759D /* Composition */,
+				ED30B8362E821B45004D759D /* Support */,
 			);
-			path = PhotoCell;
+			path = App;
 			sourceTree = "<group>";
 		};
-		EDFA85B02E68A1EE008C5417 /* ViewModel */ = {
+		ED30B8282E81D306004D759D /* Composition */ = {
 			isa = PBXGroup;
 			children = (
+				ED30B8292E81D30D004D759D /* AppContainer.swift */,
+			);
+			path = Composition;
+			sourceTree = "<group>";
+		};
+		ED30B82B2E81D6E1004D759D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ED30B82C2E81D6EA004D759D /* PhotosList */,
+				ED30B8332E81E207004D759D /* PhotoDetail */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		ED30B82C2E81D6EA004D759D /* PhotosList */ = {
+			isa = PBXGroup;
+			children = (
+				ED30B82D2E81D6F1004D759D /* PhotosListView.swift */,
+				ED30B8312E81D8B8004D759D /* PhotoRow.swift */,
+				ED30B82F2E81D702004D759D /* PhotosListViewModel.swift */,
+			);
+			path = PhotosList;
+			sourceTree = "<group>";
+		};
+		ED30B8332E81E207004D759D /* PhotoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ED30B8342E81E223004D759D /* PhotoDetailView.swift */,
 				ED8293432E6A2CD1000E8016 /* PhotoDetailViewModel.swift */,
-				EDFA85B12E68A1F7008C5417 /* FeedViewModel.swift */,
 			);
-			path = ViewModel;
+			path = PhotoDetail;
+			sourceTree = "<group>";
+		};
+		ED30B8362E821B45004D759D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				ED30B8372E821B58004D759D /* ShadowCard.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +188,6 @@
 			);
 			name = BTPexel;
 			packageProductDependencies = (
-				ED2A98682C58370000FFF19F /* SDWebImage */,
 				ED8AC36B2E4EA1DC0045AA9D /* PexelDomain */,
 				EDFA85AB2E5F7AD7008C5417 /* PexelNetworking */,
 				EDFA85AE2E5F7B07008C5417 /* PexelNetworking */,
@@ -204,7 +204,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					ED2A97D52C52F51E00FFF19F = {
 						CreatedOnToolsVersion = 15.4;
@@ -221,7 +221,6 @@
 			);
 			mainGroup = ED2A97CD2C52F51E00FFF19F;
 			packageReferences = (
-				ED2A98662C5836EF00FFF19F /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				ED8AC36A2E4EA1DC0045AA9D /* XCLocalSwiftPackageReference "SPM/PexelDomain" */,
 				EDFA85AD2E5F7B07008C5417 /* XCLocalSwiftPackageReference "SPM/PexelNetworking" */,
 			);
@@ -239,11 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2A986D2C583D7800FFF19F /* PhotoDetail.storyboard in Resources */,
-				ED2A980D2C52F7A100FFF19F /* PhotoCell.xib in Resources */,
 				ED2A97E32C52F51F00FFF19F /* Assets.xcassets in Resources */,
 				ED2A97E62C52F51F00FFF19F /* Base in Resources */,
-				ED2A97E12C52F51E00FFF19F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,30 +250,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF0704B2E45772A00355AF2 /* AppDelegate+SDWebImage.swift in Sources */,
-				EDE5A46E2C5955DA00D32FBC /* ShadowView.swift in Sources */,
-				ED2A980F2C52F90600FFF19F /* PhotoCell.swift in Sources */,
-				ED2A97DE2C52F51E00FFF19F /* PhotosListViewController.swift in Sources */,
+				ED30B8322E81D8BC004D759D /* PhotoRow.swift in Sources */,
+				ED30B82E2E81D6F2004D759D /* PhotosListView.swift in Sources */,
+				ED30B8302E81D703004D759D /* PhotosListViewModel.swift in Sources */,
+				ED30B8382E821B58004D759D /* ShadowCard.swift in Sources */,
 				ED8293442E6A2CD6000E8016 /* PhotoDetailViewModel.swift in Sources */,
-				ED2A97DA2C52F51E00FFF19F /* AppDelegate.swift in Sources */,
-				ED2A986B2C583D5D00FFF19F /* PhotoDetailViewController.swift in Sources */,
-				ED2A97DC2C52F51E00FFF19F /* SceneDelegate.swift in Sources */,
-				ED8293412E6A0075000E8016 /* AppDelegate+Support.swift in Sources */,
-				EDFA85B22E68A1F7008C5417 /* FeedViewModel.swift in Sources */,
+				ED30B8352E81E226004D759D /* PhotoDetailView.swift in Sources */,
+				ED30B82A2E81D30E004D759D /* AppContainer.swift in Sources */,
+				ED30B8252E81D28F004D759D /* BTPexelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ED2A97DF2C52F51E00FFF19F /* PhotoList.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED2A97E02C52F51E00FFF19F /* Base */,
-			);
-			name = PhotoList.storyboard;
-			sourceTree = "<group>";
-		};
 		ED2A97E42C52F51F00FFF19F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -324,6 +310,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HR4X3C4SGL;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -347,6 +334,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -387,6 +375,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HR4X3C4SGL;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -403,6 +392,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -415,9 +405,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HR4X3C4SGL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BTPexel/Info.plist;
+				INFOPLIST_FILE = BTPexel/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = PhotoList;
@@ -447,9 +436,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HR4X3C4SGL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BTPexel/Info.plist;
+				INFOPLIST_FILE = BTPexel/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = PhotoList;
@@ -506,23 +494,7 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		ED2A98662C5836EF00FFF19F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = exactVersion;
-				version = 5.19.5;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		ED2A98682C58370000FFF19F /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED2A98662C5836EF00FFF19F /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
 		ED8AC36B2E4EA1DC0045AA9D /* PexelDomain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PexelDomain;

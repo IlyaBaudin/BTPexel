@@ -9,9 +9,11 @@ import Foundation
 import PexelDomain
 
 @MainActor
-final class PhotoDetailViewModel {
+final class PhotoDetailViewModel: ObservableObject {
     private let service: PexelService
-    private(set) var photo: PexelPhoto
+    
+    @Published private(set) var photo: PexelPhoto
+    @Published var hiResImageData: Data?
     
     var titleText: String { photo.photoTitle }
     var authorText: String { photo.authorName }
@@ -23,6 +25,17 @@ final class PhotoDetailViewModel {
         self.service = service
         Task { [photo, service] in
             await service.selectPhoto(photo)
+        }
+    }
+    
+    func loadHiResImageIfPossible() async {
+        guard hiResImageData == nil,
+              let url = hiResUrl else { return }
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            self.hiResImageData = data
+        } catch {
+            
         }
     }
     
