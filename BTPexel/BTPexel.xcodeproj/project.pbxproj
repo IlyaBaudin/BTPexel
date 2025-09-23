@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		ED2A97E32C52F51F00FFF19F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2A97E22C52F51F00FFF19F /* Assets.xcassets */; };
 		ED2A97E62C52F51F00FFF19F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ED2A97E52C52F51F00FFF19F /* Base */; };
-		ED2A98692C58370000FFF19F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = ED2A98682C58370000FFF19F /* SDWebImage */; };
 		ED30B8232E81CAE5004D759D /* PexelNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = EDFA85AE2E5F7B07008C5417 /* PexelNetworking */; };
 		ED30B8252E81D28F004D759D /* BTPexelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30B8242E81D28A004D759D /* BTPexelApp.swift */; };
 		ED30B82A2E81D30E004D759D /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30B8292E81D30D004D759D /* AppContainer.swift */; };
@@ -59,7 +58,6 @@
 				ED30B8232E81CAE5004D759D /* PexelNetworking in Frameworks */,
 				ED8AC36C2E4EA1DC0045AA9D /* PexelDomain in Frameworks */,
 				EDFA85AC2E5F7AD7008C5417 /* PexelNetworking in Frameworks */,
-				ED2A98692C58370000FFF19F /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +188,6 @@
 			);
 			name = BTPexel;
 			packageProductDependencies = (
-				ED2A98682C58370000FFF19F /* SDWebImage */,
 				ED8AC36B2E4EA1DC0045AA9D /* PexelDomain */,
 				EDFA85AB2E5F7AD7008C5417 /* PexelNetworking */,
 				EDFA85AE2E5F7B07008C5417 /* PexelNetworking */,
@@ -224,7 +221,6 @@
 			);
 			mainGroup = ED2A97CD2C52F51E00FFF19F;
 			packageReferences = (
-				ED2A98662C5836EF00FFF19F /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				ED8AC36A2E4EA1DC0045AA9D /* XCLocalSwiftPackageReference "SPM/PexelDomain" */,
 				EDFA85AD2E5F7B07008C5417 /* XCLocalSwiftPackageReference "SPM/PexelNetworking" */,
 			);
@@ -498,23 +494,7 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		ED2A98662C5836EF00FFF19F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = exactVersion;
-				version = 5.19.5;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		ED2A98682C58370000FFF19F /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED2A98662C5836EF00FFF19F /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
 		ED8AC36B2E4EA1DC0045AA9D /* PexelDomain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PexelDomain;
